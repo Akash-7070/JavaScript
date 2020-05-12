@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+	
+</head>
+<body>
+
+<input type="button" value="Get Descending Order" onclick="DescString()">
+
+<h1 id="Demo"></h1>
+
+<script type="text/javascript">
+
+		var str= ["Akash","Vaibhav","Rohit","Ganesh","Pranil"];
+		document.getElementById("Demo").innerHTML = str;
+
+		function DescString() 
+		{
+			str.sort();
+			str.reverse();
+            document.getElementById("Demo").innerHTML= str;
+        }
+
+</script>
+</body>
+</html>
+
+
+
+
+
