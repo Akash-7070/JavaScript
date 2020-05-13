@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akah_Kavade</title>
+</head>
+<body>
+
+Box-1 <input id="Demo1" type="text" ></br></br>
+
+<input type="button" value="Click to Copy" onclick="Fun()"></br></br> 
+Box-2 <input id="Demo2" type="text">
+
+
+<script type="text/javascript">
+
+	function Fun()
+	{
+		var val;
+		val= document.getElementById("Demo1").value;
+        document.getElementById("Demo2").value= val;
+	}
+	
+</script>
+</body>
+</html>
+
