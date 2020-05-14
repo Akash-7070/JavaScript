@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akah_Kavade</title>
+</head>
+<body>
+
+<h1 id="Demo"></h1>
+
+<script type="text/javascript">
+
+	class Account
+	{
+      constructor(name,balance)
+      {
+      	this.Name=name;
+      	this.Balance=balance;
+      }
+
+      Deposite(add)
+      {
+      	this.Balance+=add;
+      }
+
+      Display()
+      {
+      	//document.getElementById("Demo").innerHTML=this.Name +  this.Balance;
+      	return this.Name +  this.Balance;
+      }
+	}
+
+	user1= new Account("Akash",70000);
+	document.write(user1.Display() +"</br>");
+	
+	user1.Deposite(1000);
+	document.write(user1.Display()+"</br>");
+
+	user2= new Account("Ganesh",80000);
+    document.write(user2.Display() +"</br>");
+	user2.Deposite(2000);
+    document.write(user2.Display());
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+

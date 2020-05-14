@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akah_Kavade</title>
+</head>
+<body>
+
+Enter Number: <input id="Demo1" type="text" >
+
+<input type="button" value="Get Factorial" onclick="factorial()">
+<h1 id="Demo2"></h1>
+
+<script type="text/javascript">
+
+	factorial =() =>
+	{
+	  var num= document.getElementById("Demo1").value;
+	  var fact=1;
+
+       for(var i=1; i<=num; i++)
+       {
+           fact=fact*i;
+       }
+
+       document.getElementById("Demo2").innerHTML=fact;
+	}
+	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
