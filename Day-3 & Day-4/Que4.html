@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akah_Kavade</title>
+</head>
+<body>
+<h1 id="Demo1"></h1>
+<h3 id="Demo2"></h3>
+<script type="text/javascript">
+
+	class Account
+	{
+      constructor(name,balance)
+      {
+      	this.Name=name;
+      	this.Balance=balance;
+      }
+
+      Deposite(add)
+      {
+      	this.Balance+=add;
+      	document.write(add +"  is Deposited in Your Account </br>");
+      }
+
+      Display()
+      {
+      	return "Name is:" +" "+ this.Name +"  "+"and Balance is:" +" "+ this.Balance;
+      }
+     
+	}
+	class current_Account extends Account
+	{
+		constructor(name,balance)
+		{
+			super(name,balance)
+		}
+		
+		 withdraw(amt)
+		{
+			this.Balance-=amt;
+			document.write(amt +"  is withdraw from Your Account </br>");
+		}
+		show()
+		{
+	       document.getElementById("Demo1").innerHTML= this.Display();
+		}
+	}
+
+	obj=new current_Account("Akash",20000);
+
+    document.getElementById("Demo2").innerHTML= "Transaction Details: </br>"
+	document.write(obj.Display()+"</br>");
+	obj.Deposite(5000);
+	document.write(obj.Display()+"</br>");
+	obj.withdraw(15000);
+	document.write(obj.Display()+"</br>");
+	obj.Deposite(25000);
+	document.write(obj.Display()+"</br>");
+	obj.show();
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
