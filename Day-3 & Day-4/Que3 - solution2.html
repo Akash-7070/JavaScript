@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Akah_Kavade</title>
+</head>
+
+<body style="background: bisque">
+
+Enter Number: <input type="text" id="val"></br></br>
+
+<input type="button" onclick="Math.cube()" value="Get Cube">
+<input type="button" onclick="Math.square()" value="Get Square">
+
+<h1 id="Demo1" style="color: red"></h1>
+<h1 id="Demo2"></h1>
+
+<script type="text/javascript">
+
+	class Math
+	{
+      static cube()
+      {
+        var val=document.getElementById('val').value;
+        document.getElementById("Demo1").innerHTML= val*val*val;
+      }
+
+      static square()
+      {
+         var val=document.getElementById('val').value;
+         document.getElementById("Demo2").innerHTML= val*val;
+      }
+	}
+
+</script>
+</body>
+</html>
