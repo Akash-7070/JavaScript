@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body style="background-color: orange"></br>
+<h1 align="left">Registration Form</h1>   
+
+<form onsubmit="return CheckCondtion()">
+</br></br>
+
+        <b>User Id:</b> <input type="text" id="uid" placeholder="Enter your userid">
+        <span id="up" style="color: red"></span></br></br>
+
+        <b>Password:</b> <input type="password" id="pass" placeholder="Enter your Password">
+        <span id="pp" style="color: red"></span></br></br>
+       
+        <b>Address:</b> <input type="text" id="add" placeholder="Enter Address">
+        <span id="app" style="color: red"></span></br></br>
+       
+        <b>Mobile Number:</b> <input type="text" id="mn" placeholder="Enter Mobile Number">
+        <span id="mp" style="color: red"></span></br></br>
+       
+        <b>Age:</b><input type="text" id="age" placeholder="Enter Age">
+        <span id="ap" style="color: red"></span></br></br>
+
+        <input type="submit" value="Submit Form">
+   
+</form>
+
+
+<script type="text/javascript">
+
+	function CheckCondtion()
+	{
+		var userid = document.getElementById('uid').value;
+		var pass = document.getElementById('pass').value;
+		var address = document.getElementById('add').value;
+		var mobile = document.getElementById('mn').value;
+		var age = document.getElementById('age').value;
+
+
+		if(userid == "")
+		{
+			document.getElementById("up").innerHTML="** Enter UserId";
+			return false;
+		}
+		if(userid.length <= 2 || userid.length >=20)
+		{
+			document.getElementById("up").innerHTML="** Enter Minimum 3 and maximum 20 charactor";
+			return false;
+		}
+
+
+		if(pass == "")
+		{
+			document.getElementById("pp").innerHTML="** Enter Password";
+			return false;
+		}
+		if(pass.length <= 8 )
+		{
+			document.getElementById("pp").innerHTML="** Enter Minimum 8 charactor";
+			return false;
+		}
+
+
+
+		if(address == "")
+		{
+			document.getElementById("app").innerHTML="** Enter Address";
+			return false;
+		}
+
+		if(mobile == "")
+		{
+			document.getElementById("mp").innerHTML="** Enter Mobile Number";
+			return false;
+		}
+		if(mobile.length >10 || mobile.length <10) 
+		{
+			document.getElementById("mp").innerHTML="** Mobile Number must be 10 Digit";
+			return false;
+		}
+
+
+		if(age == "")
+		{
+			document.getElementById("ap").innerHTML="** Enter Age";
+			return false;
+		}
+		if(age >= 100 || age < 18)
+		{
+			document.getElementById("ap").innerHTML="** Enter Age between 18 to 100";
+			return false;
+		}
+	}
+	
+
+</script>
+</body>
+</html>
