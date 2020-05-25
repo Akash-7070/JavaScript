@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+<h1 id="Demo1"></h1>
+<h1 id="Demo2"></h1>
+
+<script type="text/javascript">
+
+class Student
+{
+	constructor(roll_no,name,marks1,marks2,marks3)    
+	{
+	this.roll_no=roll_no;
+	this.name=name;
+	this.marks1=marks1;
+	this.marks2=marks2;
+	this.marks3=marks3;
+
+    }
+
+	 fun()      
+	 
+	 {
+      var total = this.marks1+this.marks2+this.marks3; 
+      var percentage = ((total/300)*100);
+     return  total+" is Total and "+ percentage.toFixed(2)+ " is percentage of "+ this.name;
+     }
+  
+};
+
+
+var std1= new Student(100,"Akash",90,95,75);
+var std2= new Student(101,"Ganesh",75,80,70);
+
+
+document.getElementById("Demo1").innerHTML=std1.fun();
+document.getElementById("Demo2").innerHTML=std2.fun();
+
+
+</script>
+</body>
+</html>
+
