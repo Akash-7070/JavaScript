@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+<h1 id="Demo1"></h1>
+<h1 id="Demo2"></h1>
+
+<script type="text/javascript">
+
+class Employee
+{
+	constructor(id,name,salary)    // using constructor we set proprties value
+	{
+	this.id=id;
+	this.name=name;
+	this.salary=salary;
+	//this.netsalary=netsalary;
+    }
+
+	 get Calnetsal()      // get method for calculating Netsalary
+	 
+	 {
+      var TDS = ((this.salary)*10)/100; 
+      var res = this.salary-TDS; 
+       return res+" "+"is Netsalary of"+" "+this.name;
+   }
+  
+};
+
+
+var emp1= new Employee(100,"Akash",10000);
+var emp2= new Employee(101,"Ganesh",20000);
+
+
+document.getElementById("Demo1").innerHTML=emp1.Calnetsal;
+document.getElementById("Demo2").innerHTML=emp2.Calnetsal;
+
+
+</script>
+</body>
+</html>
+
