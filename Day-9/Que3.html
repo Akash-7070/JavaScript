@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+<h1 id="Demo1"></h1>
+<h1 id="Demo2"></h1>
+
+<script type="text/javascript">
+	
+function sum()
+{
+	var i,sum=0;
+    var alen= arguments.length;
+
+	for(i=0; i<alen; i++)
+	{
+		sum+=arguments[i];
+	}
+
+	return sum;
+}
+
+   document.getElementById("Demo1").innerHTML=sum(10,5,15);
+   document.getElementById("Demo2").innerHTML=sum(10,5,15,100,300);
+
+</script>
+</body>
+</html>
+
