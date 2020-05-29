@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+Box-1: <input type="text" id="name1"><br><br>
+Box-2: <input type="text" id="name2"><br><br>
+
+<input type="radio" name="ak" id="r1">Addition</input>
+<input type="radio" name="ak" id="r2">Substraction</input><br><br>
+
+Box-3: <input type="text" id="name3"><br><br>
+
+<input type="button" value="Click!" onclick="fun()">
+
+<h1 id="demo"></h1>
+
+<script type="text/javascript">
+
+	function fun()
+	{ 
+	   var box1= Number(document.getElementById("name1").value);
+         var box2= Number(document.getElementById("name2").value);
+
+         var r1= document.getElementById("r1");
+         var r2= document.getElementById("r2");
+   
+
+       if(r1.checked == true)
+       {
+         document.getElementById("name3").value=(box1+box2);
+       }
+
+       else if(r2.checked == true)
+       {
+       	document.getElementById("name3").value=(box1-box2);
+       }
+
+	}
+</script>
+</body>
+</html>
+
