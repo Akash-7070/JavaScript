@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+Enter Name: <input type="text" id="name"><br><br>
+
+<input type="radio" name="ak" id="r1">Red</input>
+<input type="radio" name="ak" id="r2">Blue</input>
+<input type="radio" name="ak" id="r3">Yellow</input><br><br> 
+
+<input type="button" value="Click!" onclick="fun()">
+
+<h1 id="demo"></h1>
+
+<script type="text/javascript">
+
+	function fun()
+	{ 
+	   var name= document.getElementById("name").value;
+	   document.getElementById("demo").innerHTML=name;
+
+       var r1= document.getElementById("r1");
+       var r2= document.getElementById("r2");
+       var r3= document.getElementById("r3");
+
+       if(r1.checked == true)
+       {
+         document.getElementById("demo").style.color="red";
+       }
+
+       else if(r2.checked == true)
+       {
+       	document.getElementById("demo").style.color="blue";
+       }
+
+       else if(r3.checked == true)
+       {
+       	document.getElementById("demo").style.color="yellow";
+       }
+
+	}
+</script>
+</body>
+</html>
+
