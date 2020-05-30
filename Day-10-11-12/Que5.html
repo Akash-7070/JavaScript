@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash Kavade</title>
+</head>
+<body>
+
+<p id="demo">Akash-Kavade</p>
+
+<label> Choose Forn Size: </label>
+<select id="select">
+<option>Font Size</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="40">40</option>
+<option value="50">50</option>
+<option value="60">60</option>
+<option value="70">70</option>
+<option value="80">80</option>
+<option value="90">90</option>
+<option value="100">100</option>
+</select><br><br>
+
+<input type="button" value="Click!" onclick="fun()">
+
+<script type="text/javascript">
+
+function fun()
+{
+	var x= document.getElementById("select");
+	document.getElementById("demo").style.fontSize=x.value+"px";
+}
+
+</script>
+</body>
+</html>
