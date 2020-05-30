@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+<input type="password" id="Demo1" onchange="fun()" placeholder="Enter Password">
+<span id="Demo2" style="color: red"></span>
+
+	<script type="text/javascript">
+
+		function fun()
+		{
+			var pass= document.getElementById("Demo1").value;
+
+			if(pass.length < 8)
+			{
+				document.getElementById("Demo2").innerHTML= "**Password must be 8 Charactor Long";
+			}
+
+			else if(pass.search(/[a-z]/) == -1)
+			{
+				document.getElementById("Demo2").innerHTML= "**Password must contain at least one Lowercase letter";
+			}
+
+			else if(pass.search(/[A-Z]/) == -1)
+			{
+				document.getElementById("Demo2").innerHTML= "**Password must contain at least one Uppercase letter";
+			}
+
+			else if(pass.search(/[!\@\#\$\^\*\&\.\-\_\:\,]/) == -1)
+			{
+				document.getElementById("Demo2").innerHTML= "**Password must contain at least one Special Symbol";
+			}
+
+			else if(pass.search(/[0-9]/) == -1)
+			{
+				document.getElementById("Demo2").innerHTML= "**Password must contain at least one Digit";
+			}
+
+			else
+			{
+				document.getElementById("Demo2").innerHTML="Successful";
+				document.getElementById("Demo2").style.color="green";
+			}
+		}
+
+	</script>
+</body>
+</html>

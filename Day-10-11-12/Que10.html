@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+<input type="text" id="demo1" placeholder="Enter Name">
+<span id="demo2" style="color: red"></span><br><br>
+<input type="button" value="Check" onclick="fun()">
+ 	
+	<script type="text/javascript">
+
+		function fun()
+		{
+			var name=document.getElementById("demo1").value;
+			
+  		    if(name == "")
+			{
+			 document.getElementById("demo2").innerHTML="**Error (please Enter Name)";
+			}
+		}
+	
+	</script>
+</body>
+</html>
