@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+<h2>Select Books and Get Total Price</h2>
+
+<div onclick="fun()">
+<input type="checkbox"  class="Book"  value="1000">MYSQL(1000 Rs)</input><br>
+<input type="checkbox"  class="Book"  value="2500">CPP(2500 Rs)</input><br>
+<input type="checkbox"  class="Book"  value="500">JAVA(500 Rs)</input><br>
+<input type="checkbox"  class="Book"  value="1500">JAVASCRIPT(1500 Rs)</input><br><br>
+
+</div>
+
+Total Price: <input type="text" id="Demo">	
+	
+
+
+	<script type="text/javascript">	
+
+		function fun()
+
+		{
+
+		var x=document.getElementsByClassName("Book");
+
+		var Total=0;
+
+		for(var i=0; i<x.length; i++)
+		{
+			if(x[i].checked==true)
+			{
+              Total+=Number(x[i].value);
+            }
+		}
+
+		document.getElementById("Demo").value= Total;
+	}
+
+	</script>
+
+</body>
+</html>
