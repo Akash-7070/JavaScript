@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+	<style type="text/css">
+
+		body{
+			background-color: black;
+		}
+		h1{
+			color: white;
+		}
+
+		#div{
+			border: 10px solid red;
+			margin-top: 120px;
+			color:white;
+		    margin-left: 530px;
+		    height: 80px; 
+		    width: 20%;
+		}
+		
+	</style>
+
+	<h1 align="center">Digital Watch</h1>
+
+	<div id="div">
+	<h1 id="Demo" align="center"></h1>
+	</div>
+
+	<script type="text/javascript">
+
+		function time()
+		{
+			var t= new Date();
+			var x=t.toLocaleTimeString();  //Return the time portion of a Date object as a string, using locale conventions
+
+			/*
+			var h= t.getHours();
+			var m= t.getMinutes();
+			var s= t.getSeconds();
+			document.getElementById("Demo").innerHTML= h+":"+m+":"+s;
+							*/
+            document.getElementById("Demo").innerHTML= x;
+		} 
+
+		setInterval(time,1000);
+
+	</script>
+
+</body>
+</html>
+
