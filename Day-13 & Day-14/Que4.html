@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+</head>
+<body>
+
+	<style type="text/css">
+		#div{
+
+			background-color: bisque;
+			margin-top: 18%;
+			width: 20%;
+			height: 120px;
+			margin-left: 38%;
+			padding-top: 2%;
+			padding-bottom: 0%;
+		}
+		body{
+			background-color: black;
+		}
+	</style>
+
+<div id="div" align="center">
+
+	<input type="text" id="Demo" placeholder="Enter Cookie Name"><br><br>
+	<input type="button" value="Create Cookie" onclick="CreateCookie()">
+	<input type="button" value="Read Cookie" onclick="ReadCookie()">
+</div>
+<script type="text/javascript">
+
+   function CreateCookie()
+   {
+   	var name= document.getElementById("Demo").value;
+   	document.Cookie= "username="+name;
+   }
+
+   function ReadCookie()
+   {
+   	 alert(document.Cookie);
+   }
+
+</script>
+</body>
+</html>
