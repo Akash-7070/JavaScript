@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+	<script src="jquery.js"></script>
+</head>
+
+<textarea id="Demo"></textarea>
+
+<br><br>
+<input type="radio" name="gk" id="d1" value="red">Red</input>
+<input type="radio" name="gk" id="d2" value="blue">Blue</input>
+<input type="radio" name="gk" id="d3" value="yellow">Yellow</input>
+
+<body>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$("input").click(function(){
+
+				var x= $("[type='radio']:checked").val();
+
+				$("#Demo").css("color",x);	
+     		})	
+	});
+	</script>
+
+</body>
+</html>
+      

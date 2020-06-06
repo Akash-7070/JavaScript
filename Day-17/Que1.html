@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+	<script src="jquery.js"></script>
+</head>
+
+<center>
+	<input type="text" id="Demo1" placeholder="Text Box-1"> =
+	<input type="text" id="Demo2" placeholder="Text Box-2"><br><br>
+
+	<button>Click for Copy</button>
+
+</center>
+
+<body>
+
+	<script>
+
+		$(document).ready(function()
+		{
+			$("button").click(function(){
+
+			  $("#Demo2").val( $("#Demo1").val());
+			})
+			
+	});
+	</script>
+
+</body>
+</html>
+      

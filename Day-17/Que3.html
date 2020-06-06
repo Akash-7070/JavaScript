@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Akash_Kavade</title>
+	<script src="jquery.js"></script>
+</head>
+
+<input type="radio" name="gk" value="Dragonfruit">Dragonfruit</input>
+<input type="radio" name="gk" value="Lichi">Lichi</input>
+<br><br>
+<ol>
+	<li>Apple</li>
+	<li>Orange</li>
+	<li>Banana</li>
+</ol>
+
+<body>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$("input").click(function(){
+
+				var x= $("[type='radio']:checked").val();	
+
+				$("ol").append("<li>"+x+"</li>");
+     		})	
+	});
+	</script>
+
+</body>
+</html>
+      
